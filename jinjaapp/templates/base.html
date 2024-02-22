@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Mid-morning safari{% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1>{% block header %}Welcome to safari lab{% endblock %}</h1>
+
+<nav>
+    <ul>
+        <li><a href="{%url 'My_index' %}">home</a></li>
+        <li><a href="{% url 'My_about' %}">about</a></li>
+        <li><a href="{% url 'My_contact' %}">contact</a></li>
+        <li><a href="{% url 'My_gallery' %}">gallery</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    <p>&copy;2024 MAUREEN MACHARIA'S DESIGN.</p>
+</footer>
+</body>
+</html>
